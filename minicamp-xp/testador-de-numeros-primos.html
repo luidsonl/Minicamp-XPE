@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Testador de Números primos</title>
+	<script type="text/javascript">
+		//funcão testa se um número é primo
+		function testPrimo(num){
+			let primo = true
+			for (i = 2; i < num; i++){
+				if (num%i===0){
+					primo = false;
+				}
+			}
+			//exclui o numero 1
+			if (num===1){
+				primo = false;
+			}
+			//retorna o valor
+			return ("É primo: " + primo);
+		}
+		// função testa quais numeros até o número informado são primos 
+		function listaPrimoMenor(num){
+			//cria lista
+			let list = [];
+			for (i = 2; i <= num; i++){
+				//testa se o numero é primo
+				let primo = true
+				for (ii = 2; ii < i; ii++){
+					if (i%ii===0){
+						primo = false;
+					}
+				}
+				if (primo === true){
+					list.push(i);
+				}
+			}
+			return (list);
+		}
+
+		function somaPrimos(initial, final){
+			//cria lista
+			let soma = 0;
+			if (initial <= 0){
+				initial =2;
+			}
+			for (i = initial ; i <= final; i++){
+				//testa se o numero é e soma ao total
+				let primo = true
+				if (i <= 1){
+					primo = false
+				}
+				for (ii = 2; ii < i; ii++){
+					if (i%ii===0){
+						primo = false;
+					}
+				}
+				if (primo === true){
+					soma = soma + i;
+				}
+			}
+
+		return (soma);
+
+		}
+
+	</script>
+</head>
+<body>
+	<h1>Abra o console para chamar a função</h1>
+	<h2>para testar se um número é primo use</h2>
+	testPrimo(<b>coloque o número aqui</b>)
+	<h2>Para testar quais numeros até o número informado são primos use:</h2>
+	listaPrimoMenor(<b>coloque o número aqui</b>)
+	<h2> Para somar os números primos até um determinado número use:</h2>
+	somaPrimos(<b>coloque o número inicial "," numero final</b>)
+
+</body>
+</html>

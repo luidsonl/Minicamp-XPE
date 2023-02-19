@@ -1,0 +1,55 @@
+.box{
+    font-family: monospace;
+    text-align: center;
+    font-size: 15px;
+}
+
+#megasena-board{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#megasena-board ul{
+
+    list-style-type: none;
+    font-size: 20px;
+    
+}
+
+#megasena-board li{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin: 10px;
+    cursor: default;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.selected-number{
+    background-color: rgb(101, 216, 97);
+}
+
+
+#megasena-buttons button{
+    cursor: pointer;
+    font-size: 15px;
+    margin: 10px;
+}
+
+#megasena-saved-games{
+    border: 1px  solid black;
+    
+}
+#megasena-saved-games ul{
+    list-style-type: none;
+}
+#megasena-saved-games li{
+    margin-top:20px ;
+}
+#megasena-saved-games li button{
+    margin-right:20px ;
+    background-color: red;
+}

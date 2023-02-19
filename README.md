@@ -1,6 +1,4 @@
-# Exercícios realizados com HTML, CSS e JavaScript puro.
-
-+ ## Minicamp xp
+# Minicamp xp
 
 ### 1. Testador de números primos (sem interface)
 
